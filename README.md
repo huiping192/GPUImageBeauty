@@ -22,7 +22,7 @@ pod 'GPUImageBeauty'
 
 ## Author
 
-huiping_guo, huiping.guo@dena.jp
+huiping_guo, huiping192@gmail.com
 
 ## License
 
