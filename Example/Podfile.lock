@@ -1,15 +1,22 @@
 PODS:
-  - GPUImageBeauty (0.1.0)
+  - GPUImage (0.1.7)
+  - GPUImageBeauty (0.1.0):
+    - GPUImage
 
 DEPENDENCIES:
   - GPUImageBeauty (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - GPUImage
 
 EXTERNAL SOURCES:
   GPUImageBeauty:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GPUImageBeauty: 88bd797f9af08ec0b64bf0fa75a365ede63c234b
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  GPUImageBeauty: 42fdcd53dea47800c44fc245e6a420f0a32f73b8
 
 PODFILE CHECKSUM: 82c09460283b054122ac046cdc5b3219c761f01b
 

@@ -27,9 +27,9 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		7F43F43C106FA3FC42C154AD /* Pods_GPUImageBeauty_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPUImageBeauty_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		927083BDEDF5FA15A53C2D71 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		B91C5AD0F58E1874A067DF14 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		C0FC2367DF88BD17A3EC5564 /* GPUImageBeauty.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GPUImageBeauty.podspec; path = ../GPUImageBeauty.podspec; sourceTree = "<group>"; };
+		927083BDEDF5FA15A53C2D71 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B91C5AD0F58E1874A067DF14 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C0FC2367DF88BD17A3EC5564 /* GPUImageBeauty.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GPUImageBeauty.podspec; path = ../GPUImageBeauty.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DB442C333DD0D5F834031673 /* Pods-GPUImageBeauty_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUImageBeauty_Tests.release.xcconfig"; path = "Target Support Files/Pods-GPUImageBeauty_Tests/Pods-GPUImageBeauty_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,7 +114,6 @@
 				118D3AFE502F86F62B64B294 /* Pods-GPUImageBeauty_Tests.debug.xcconfig */,
 				DB442C333DD0D5F834031673 /* Pods-GPUImageBeauty_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -160,6 +159,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -214,10 +214,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GPUImageBeauty_Tests/Pods-GPUImageBeauty_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
 				"${BUILT_PRODUCTS_DIR}/GPUImageBeauty/GPUImageBeauty.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImageBeauty.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
