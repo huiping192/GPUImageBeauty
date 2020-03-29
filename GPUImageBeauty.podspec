@@ -17,9 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'GPUImageBeautyFilter and GPUImageEmptyFilter. From LFLiveKit.'
 
   s.homepage         = 'https://github.com/huiping192/GPUImageBeauty'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

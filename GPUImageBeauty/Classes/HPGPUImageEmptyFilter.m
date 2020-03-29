@@ -1,7 +1,7 @@
 #import "HPGPUImageEmptyFilter.h"
 
 #if TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE
-NSString *const kLFGPUImageEmptyFragmentShaderString = SHADER_STRING
+NSString *const kHPGPUImageEmptyFragmentShaderString = SHADER_STRING
                                                        (
     varying highp vec2 textureCoordinate;
 
@@ -30,11 +30,11 @@ NSString *const kGPUImageInvertFragmentShaderString = SHADER_STRING
                                                       );
 #endif
 
-@implementation LFGPUImageEmptyFilter
+@implementation HPGPUImageEmptyFilter
 
 - (id)init;
 {
-    if (!(self = [super initWithFragmentShaderFromString:kLFGPUImageEmptyFragmentShaderString])) {
+    if (!(self = [super initWithFragmentShaderFromString:kHPGPUImageEmptyFragmentShaderString])) {
         return nil;
     }
 
