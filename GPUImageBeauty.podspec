@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'GPUImageBeauty'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of GPUImageBeauty.'
+  s.summary          = 'GPUImageBeautyFilter and GPUImageEmptyFilter'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,22 +21,16 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/huiping_guo/GPUImageBeauty'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/huiping192/GPUImageBeauty'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'huiping_guo' => 'huiping.guo@dena.jp' }
-  s.source           = { :git => 'https://github.com/huiping_guo/GPUImageBeauty.git', :tag => s.version.to_s }
+  s.author           = { 'huiping_guo' => 'huiping192@gmail.com' }
+  s.source           = { :git => 'https://github.com/huiping192/GPUImageBeauty.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'GPUImageBeauty/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'GPUImageBeauty' => ['GPUImageBeauty/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.public_header_files = 'GPUImageBeauty/Classes/**/*.h'
    s.dependency 'GPUImage'
 end
