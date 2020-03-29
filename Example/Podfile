@@ -1,0 +1,6 @@
+use_frameworks!
+target 'GPUImageBeauty_Tests' do
+  pod 'GPUImageBeauty', :path => '../'
+  
+  
+end
